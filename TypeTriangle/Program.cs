@@ -11,8 +11,11 @@ namespace TypeTriangle // Note: actual namespace depends on the project name.
             double E = 0.1, A, B, C;
 
             // Ввод данных
+            Console.WriteLine("Введите A:");
             A = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Введите B:");
             B = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Введите C:");
             C = Convert.ToDouble(Console.ReadLine());
 
             if (A > 0 && B > 0 && C > 0)
