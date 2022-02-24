@@ -21,6 +21,10 @@ namespace TypeTriangle // Note: actual namespace depends on the project name.
                 {
                     if (A == B && A == C && C == B)
                     {
+                        Console.WriteLine("Равносторонний");
+                    }
+                    else
+                    {
                         if (A == B)
                         {
                             Console.WriteLine("Равнобедренный");
@@ -37,14 +41,10 @@ namespace TypeTriangle // Note: actual namespace depends on the project name.
                             }
                         }
                     }
-                    else
-                    {
-                        Console.WriteLine("Равносторонний");
-                    }
                 }
                 else
                 {
-                    Console.WriteLine("Треуголника с такими сторонами не существует");
+                    Console.WriteLine("Треугольника с такими сторонами не существует");
                 }
             }
             else
