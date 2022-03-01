@@ -8,9 +8,10 @@ namespace TypeTriangle // Note: actual namespace depends on the project name.
     {
         public static void Main(string[] args)
         {
-            double E = 0.1, A, B, C;
+            double E = 0.05, A, B, C;
 
             // Ввод данных
+            Console.WriteLine("Введите в порядке возрастания.");
             Console.WriteLine("Введите A:");
             A = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("Введите B:");
@@ -34,7 +35,7 @@ namespace TypeTriangle // Note: actual namespace depends on the project name.
                         }
                         else
                         {
-                            if ((A * A + B * B) - C * C < E)
+                            if (E > Math.Abs((C*C) - ((A * A + B * B))))
                             {
                                 Console.WriteLine("Прямоугольный");
                             }
